@@ -8,6 +8,7 @@ import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import App from "./App.tsx";
+import "../public/assets/css/style.css";
 
 createRoot(document.getElementById("root")).render(
   <>
