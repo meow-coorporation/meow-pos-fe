@@ -95,10 +95,6 @@ import ComingSoonPage from "./pages/ComingSoonPage";
 import AccessDeniedPage from "./pages/AccessDeniedPage";
 import MaintenancePage from "./pages/MaintenancePage";
 import BlankPagePage from "./pages/BlankPagePage";
-import CashierLoginPage from "./pages/CashierLoginPage";
-import SignInPagePOS from "./pages/SignInPagePOS.tsx";
-import SignUpPagePOS from "./pages/SignUpPagePOS.tsx";
-import StorePOS from "./pages/StorePOS.tsx";
 
 function App() {
   return (
@@ -219,15 +215,8 @@ function App() {
         <Route path='/wallet' element={<WalletPage />} />
         <Route path='/widgets' element={<WidgetsPage />} />
         <Route path='/wizard' element={<WizardPage />} />
-        <Route path='/cashier-login' element={<CashierLoginPage />} />
 
         <Route path='*' element={<ErrorPage />} />
-
-        {/*  MEOW POS */}
-        <Route path='/meow/sign-in' element={<SignInPagePOS />} />
-        <Route path='/meow/sign-up' element={<SignUpPagePOS />} />
-        <Route path='/meow/store' element={<StorePOS />} />
-
       </Routes>
     </BrowserRouter>
   );
