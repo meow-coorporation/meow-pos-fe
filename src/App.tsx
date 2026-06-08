@@ -95,6 +95,9 @@ import ComingSoonPage from "./pages/ComingSoonPage";
 import AccessDeniedPage from "./pages/AccessDeniedPage";
 import MaintenancePage from "./pages/MaintenancePage";
 import BlankPagePage from "./pages/BlankPagePage";
+import SignInPagePOS from "./pages/SignInPagePOS.tsx";
+import SignUpPagePOS from "./pages/SignUpPagePOS.tsx";
+import StorePOS from "./pages/StorePOS.tsx";
 
 function App() {
   return (
@@ -217,6 +220,12 @@ function App() {
         <Route path='/wizard' element={<WizardPage />} />
 
         <Route path='*' element={<ErrorPage />} />
+
+        {/*  MEOW POS */}
+        <Route path='/meow/sign-in' element={<SignInPagePOS />} />
+        <Route path='/meow/sign-up' element={<SignUpPagePOS />} />
+        <Route path='/meow/store' element={<StorePOS />} />
+
       </Routes>
     </BrowserRouter>
   );
